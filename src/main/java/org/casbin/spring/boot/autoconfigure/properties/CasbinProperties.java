@@ -57,6 +57,8 @@ public class CasbinProperties {
      * Whether to use Watcher for strategy synchronization
      */
     private boolean enableWatcher = false;
+
+    private boolean enableWatcherEx = false;
     /**
      * The configuration will only take effect if the adapter supports this function
      * Can be manually switched through enforcer.enableAutoSave(true)
@@ -152,6 +154,14 @@ public class CasbinProperties {
 
     public void setEnableWatcher(boolean enableWatcher) {
         this.enableWatcher = enableWatcher;
+    }
+
+    public boolean isEnableWatcherEx() {
+        return enableWatcherEx;
+    }
+
+    public void setEnableWatcherEx(boolean enableWatcherEx) {
+        this.enableWatcherEx = enableWatcherEx;
     }
 
     public boolean isAutoSave() {
